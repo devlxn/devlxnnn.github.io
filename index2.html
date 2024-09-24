@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Фреймворки</title>
+    <link rel="stylesheet" href="https://unpkg.com/open-props">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Шапка с навигационным меню -->
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="laravel.html">Laravel</a></li>
+                <li><a href="symfony.html">Symfony</a></li>
+                <li><a href="codeigniter.html">CodeIgniter</a></li>
+                <li><a href="yii.html">Yii</a></li>
+                <li><a href="zend.html">Zend Framework</a></li>
+                <li><a href="comparison.html">Сравнение фреймворков</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Основной контент -->
+        <section>
+            <h1>Добро пожаловать на сайт о PHP фреймворках</h1>
+            <p>На этом сайте вы найдете информацию о самых популярных PHP фреймворках.</p>
+        </section>
+    </main>
+
+</body>
+</html>
+/* Стили для горизонтального меню */
+body {
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    background-color: var(--gray-0);
+    color: var(--gray-9);
+}
+
+/* Стили для шапки и меню */
+.header {
+    background-color: var(--blue-7);
+    padding: var(--size-4) 0;
+    box-shadow: var(--shadow-2);
+}
+
+.navbar {
+    max-width: var(--measure-6);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: var(--size-4); /* Отступы между элементами меню */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    padding: var(--size-2) var(--size-4);
+    transition: background-color 0.3s ease;
+}
+
+.nav-list li:hover {
+    background-color: var(--blue-5);
+    border-radius: var(--radius-2);
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--gray-0);
+    font-size: var(--font-size-fluid-4);
+    font-weight: bold;
+}
+
+/* Стили для адаптивности */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--size-3);
+    }
+
+    .nav-list li {
+        width: 100%;
+        text-align: center;
+    }
+}
